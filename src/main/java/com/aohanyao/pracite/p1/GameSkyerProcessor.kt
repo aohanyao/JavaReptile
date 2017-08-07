@@ -24,12 +24,19 @@ class GameSkyerProcessor : PageProcessor {
         page.html
                 .all()
                 .forEach {
-//                    System.out.println(it)
+                    //                    System.out.println(it)
                 }
         //like
         val xpath = page.html.xpath("//div[@class='tit'")
         xpath.all()
-                .forEach { System.out.println(it) }
+                .forEach {
+                    System.out.println(it)
+                }
+
+        xpath.xpath("//a[@class='tt']").apply {
+            xpath("/text()").all().forEach { System.out.println(it) }
+        }
+
 
     }
 

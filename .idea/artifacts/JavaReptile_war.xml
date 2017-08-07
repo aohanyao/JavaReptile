@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="JavaReptile:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="Reptile.war">
+      <element id="artifact" artifact-name="JavaReptile:war exploded" />
+    </root>
+  </artifact>
+</component>
